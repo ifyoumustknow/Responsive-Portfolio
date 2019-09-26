@@ -4,7 +4,6 @@ header {
     border-bottom:2px solid black;
 }
 
-
 aside {
     float: left;
     background-color: whitesmoke;
@@ -30,16 +29,10 @@ p {
 }
 
 .form {
-    float: left;
+    float:left;
     padding: 30px;
-    background: whitesmoke;
 }
 
-input {
-    width: 600px;
-    /* height: 30px; */
-    font-size: 12pt;
-}
 
 .side_info {
     float: left;
@@ -48,55 +41,57 @@ input {
     height: auto;
 }
 
-.text_padding{
-    padding: 20px;
-    text-align: center;
-}
-
 .nav_size {
-    width: 960px;
+    width: 700px;
     height: 100px;
-    margin: auto auto auto auto;
     padding: 0px ;
-    /* background-color:whitesmoke; */
+    margin: auto;
+    font-size: 23pt;
 }
 
 .nav_button {
-    list-style: none;
-    padding: 0px;
     float: right;
+    list-style:none;
+    padding: 0px;
     color: gray;
     margin: 40px 0px 0px 30px;
     font-size: 9pt;
+    text-align: center;
 }
 
 .top-header {
-    background-color:#275a53; 
     margin: -10px;
     height: auto;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 .section {
-    max-width: 960px;
-    height: 600px;
+    width: 700px;
     margin: 20px auto;
     padding-bottom: 30px;
     background: whitesmoke;
 }
 
-
-.section-wrap {
-    width:960px;
-    height:600px;
+.container {
+    width: 700px;
+    height: 500px;
+    margin: 20px auto;
+    padding-bottom: 30px;
+    background: whitesmoke;
 }
-
 
 .input-size {
     width: 600px;
     margin-top: 0px;
     font-size: 12pt;
-    text-align: initial;
+    color:grey;
+}
+
+.input-size2 {
+    width: 600px;
+    height: 300px;
+    margin-top: 0px;
+    font-size: 12pt;
     color:grey;
 }
 
@@ -109,9 +104,9 @@ input {
 }
 
 .footer {
-    position: relative;
-    bottom: 0px;
+    position: fixed;
     width: 100%;
+    bottom: 0px;
     background-color: black;
     height: 100px;
     border-top:10px solid rgba(92, 92, 92, 0.467);
@@ -122,7 +117,7 @@ input {
 
 .page-container {
     position: relative;
-    max-height: 100vh;
+    max-height: 100vm;
     bottom: 0px;
 }
 
@@ -131,7 +126,7 @@ input {
  }
 
 .hor-line {
-    width: 900px;
+    width:645px;
     height: 1px;
     margin: 1px 0 0 30px;
     background-color:black;
@@ -145,16 +140,15 @@ input {
 }
 
 .text-wrap {
-    width: 890px;
-    margin:30px;
+    width: 650px;
+    margin:30px 30px 30px 30px;
+    font-size: 11pt;
 }
 
 .white {
     text-justify: center;
     color: #e3492B;
     font-size: 20px;
-    margin:10% auto;
-
 }
  
 .port_image {
@@ -194,7 +188,7 @@ input {
 }
 
 .background {
-    background:green;
+    background-color:#275a53; 
 }
 
 .fixed-box3 {
@@ -208,54 +202,85 @@ input {
 }
 
 .picture-size {
-    width: 900px;
-    margin: 0px 0px 0px 30px;
+    width:658px;
+    margin: 20px 20px;
 }
+
 
 #text-area {
     color: lightgray;
     padding: 20px;
 }
 
+.submit_button {
+    width: 550px;
+    background-color: #e3492B;
+    color: white;
+    border-radius: 10px;
+    margin: auto;;
+    /* height: 30px; */
+    font-size: 12pt;
+
+}
+
 @media screen and (max-width: 768px) {
+
+    .container {
+        width: 700px;
+        height: 500px;
+        margin: 20px auto;
+        padding-bottom: 30px;
+        background: whitesmoke;
+    }
+    
+
+    header {
+        min-width: 768px;
+        height: 100px;
+        background-color: #f5f0e3;
+        border-bottom:2px solid black;
+    }
+    
+
+    .page-container {
+        min-width: 768px;
+        position: relative;
+        max-height: 100vm;
+        bottom: 0px;
+    }
+    
 
     .side_info {
         float: left;
-        background-color: whitesmoke;
-        margin: 30px;
+        margin: 10px 10px 10px 10px;
         height: 350px;
-        width: 150px;
+        width: 180px;
     }
 
     .port_image {
         margin-left: 30px;
         margin-top: 20px;
-        height: 280px;
+        height: 250px;
       
     }
 
     .section {
-        width: 750px;
-        height: 350px;
+        width: 700px;
         margin: 20px auto;
         padding-bottom: 30px;
         background: whitesmoke;
     }
 
-    .section-wrap {
-        width:750px auto;
-    
-    }
 
     .nav_size {
-        width: 750px;
+        width: 700px;
         height: 100px;
         padding: 0px ;
         font-size: 23pt;
     }
     
     .text-wrap {
-        width: 695px;
+        width: 650px;
         margin:30px 30px 30px 30px;
         font-size: 11pt;
     }
@@ -267,8 +292,13 @@ input {
     }
 
     .picture-size {
-        width:700px;
-        margin: 0px 0px 0px 30px;
+        width:658px;
+        margin: 20px 20px;
+    }
+
+    .aside-text {
+        font-size: 9pt;
+        margin: 0px 0px 0px 10px;
     }
 
 
@@ -293,9 +323,6 @@ input {
         text-align: center;
     }
 
-    .background {
-        background:green;
-    }
 
     .fixed-box3 {
         position: absolute;
@@ -308,7 +335,7 @@ input {
     }
 
     .hor-line {
-        width:700px;
+        width:645px;
         height: 1px;
         margin: 1px 0 0 30px;
         background-color:black;
@@ -322,17 +349,26 @@ input {
     }
 
     .input-size {
-        width: 250px;
+        width: 400px;
         margin-top: 0px;
         font-size: 12pt;
         /* text-align: initial; */
         color:grey;
     }
 
-    .position-center{
-        margin: 0px 30px 30px 30px;
+    .input-size2 {
+        width: 400px;
+        height: 200px;
+        margin-top: 0px;
+        font-size: 12pt;
+        /* text-align: initial; */
+        color:grey;
+    }
+
+    .contact_pic {
+        margin: 20px;
         width: 150px;
-      
+
     } 
     
     .form {
@@ -342,58 +378,197 @@ input {
         /* margin-left: 200px; */
         background: whitesmoke;
 
- 
-
-}
-
-
-
-
-
-
-
-
-
-
-@media screen and (max-width: 200px) {
-
-    .section {
-        width: 750px;
-        /* height: 600px; */
-        margin: 20px auto;
-        padding-bottom: 30px;
-        background: whitesmoke;
     }
 
-    .section-wrap {
-        width:750px;
+    .submit_button {
+        width: 300px;
+        background-color: #e3492B;
+        color: white;
+        border-radius: 10px;
+        /* height: 30px; */
+        font-size: 12pt;
+    }
+
+    @media screen and (max-width: 640px) {
+
+        .container {
+            width: 640px;
+            height: 500px;
+            /* margin: px auto; */
+            padding-bottom: 30px;
+            background: whitesmoke;
+        }
+        
+    
+        header {
+            min-width: 640px;
+            background-color: #f5f0e3;
+            border-bottom:2px solid black;
+        }
+        
+    
+        .page-container {
+            min-width: 640px;
+            position: relative;
+            max-height: 100vm;
+            bottom: 0px;
+        }
+        
+    
+        .side_info {
+            float: left;
+            margin: 10px 10px 10px 10px;
+            height: 350px;
+            width: 180px;
+        }
+    
+        .port_image {
+            margin-left: 30px;
+            margin-top: 20px;
+            height: 250px;
+          
+        }
+    
+        .section {
+            width: 640px;
+            padding-bottom: 30px;
+            background: whitesmoke;
+        }
+    
+    
+        .nav_size {
+            width: 640px;
+            height: 100px;
+            background-color: darkolivegreen;
+            margin:0px 0px;
+            font-size: 23pt;
+        }
+        
+        .text-wrap {
+            width:589px;
+            margin:30px 30px 30px 30px;
+            font-size: 11pt;
+        }
+    
+        .text_padding{
+            padding: 10px;
+            text-align: center;
+            font-size: 11pt;
+        }
+    
+        .picture-size {
+            width:600px;
+            margin: 20px 20px;
+        }
+    
+        .aside-text {
+            font-size: 9pt;
+            margin: 0px 0px 0px 10px;
+        }
+    
+    
+        .fixed-box1 {
+            position: absolute;
+            background: rgba(255, 225, 0, 0.9);
+            margin: 180px 55px;
+            height: 32px;
+            width: 150px;
+            border-radius:100px;
+            text-align: center;
+        }
+    
+        .fixed-box2 {
+            position: absolute;
+            text-align: auto;
+            background: rgba(255, 225, 0, 0.9);
+            margin: 180px 45px;
+            height: 32px;
+            width: 230px;
+            border-radius:100px;
+            text-align: center;
+        }
+    
+    
+        .fixed-box3 {
+            position: absolute;
+            background: rgba(255, 225, 0, 0.9);
+            margin: 180px 55px;
+            height: 28px;
+            width: 150px;
+            border-radius:100px;
+            text-align: center;
+        }
+    
+        .hor-line {
+            width:600px;
+            height: 1px;
+            margin: 1px 0 0 30px;
+            background-color:black;
+        }
+    
+        .vert-line {
+            float:left;
+            border-left: 1px solid black;
+            margin: 15px 0 0 ;
+            height: 375px;
+        }
+    
+        .input-size {
+            width: 400px;
+            margin-top: 0px;
+            font-size: 12pt;
+            /* text-align: initial; */
+            color:grey;
+        }
+    
+        .input-size2 {
+            width: 400px;
+            height: 200px;
+            margin-top: 0px;
+            font-size: 12pt;
+            /* text-align: initial; */
+            color:grey;
+        }
+    
+        .contact_pic {
+            margin: 20px;
+            width: 150px;
+    
+        } 
+        
+        .form {
+            float: left;
+            /* position: absolute;
+            top: 180px; */
+            /* margin-left: 200px; */
+            background: whitesmoke;
+    
+        }
+    
+        .submit_button {
+            width: 300px;
+            background-color: #e3492B;
+            color: white;
+            border-radius: 10px;
+            /* height: 30px; */
+            font-size: 12pt;
+    
+        }
+
+        .blue-box {
+            text-justify: center;
+            background-color:#f8c765;
+            width: 640px;
+            margin: 0px auto;
+            margin-top: 0px;
+        }
+
+        .white {
+            text-justify: center;
+            color: #e3492B;
+            font-size: 30px;
+        
+        }
     
     }
-
-    .nav_size {
-        width: 750px;
-        height: 100px;
-        padding: 0px ;
-        font-size: 23pt;
-    }
-    
-    .text-wrap {
-        width: 695px;
-        margin:30px 30px 30px 30px;
-        font-size: 11pt;
-    }
-
-    .text_padding{
-        padding: 10px;
-        text-align: center;
-        font-size: 11pt;
-    }
-
-    .picture-size {
-        width:700px;
-        margin: 0px 0px 0px 30px;
-    }
-
-    
-
 }
