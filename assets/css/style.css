@@ -28,17 +28,26 @@ p {
     font-size:12pt auto;
 }
 
+li {
+    display: inline;
+    padding: 10px;
+  }
+
 .form {
-    float:left;
+    float: left;
     padding: 30px;
+
 }
 
+.nav_inline {
+    display: inline;
+}
 
 .side_info {
     float: left;
-    background-color: whitesmoke;
-    margin: 30px;
-    height: auto;
+    margin: 10px 10px 10px 10px;
+    height: 350px;
+    width: 180px;
 }
 
 .nav_size {
@@ -49,12 +58,11 @@ p {
     font-size: 23pt;
 }
 
-.nav_button {
+
+.nav_box {
     float: right;
     list-style:none;
-    padding: 0px;
-    color: gray;
-    margin: 40px 0px 0px 30px;
+    margin: 40px 0px 0px 0px;
     font-size: 9pt;
     text-align: center;
 }
@@ -81,17 +89,19 @@ p {
 }
 
 .input-size {
-    width: 600px;
+    width: 400px;
     margin-top: 0px;
     font-size: 12pt;
+    /* text-align: initial; */
     color:grey;
 }
 
 .input-size2 {
-    width: 600px;
-    height: 300px;
+    width: 400px;
+    height: 200px;
     margin-top: 0px;
     font-size: 12pt;
+    /* text-align: initial; */
     color:grey;
 }
 
@@ -107,6 +117,7 @@ p {
     position: fixed;
     width: 100%;
     bottom: 0px;
+    margin-right: -1px;
     background-color: black;
     height: 100px;
     border-top:10px solid rgba(92, 92, 92, 0.467);
@@ -136,7 +147,7 @@ p {
     float:left;
     border-left: 1px solid black;
     margin: 15px 0 0 ;
-    height: 500px;
+    height: 375px;
 }
 
 .text-wrap {
@@ -154,12 +165,13 @@ p {
 .port_image {
     margin-left: 30px;
     margin-top: 20px;
-    height: 350px;
+    height: 250px;
   
 }
 
 .aside-text {
-    font-size: 10pt;
+    font-size: 9pt;
+    margin: 0px 0px 0px 10px;
 }
 
 .position-center{
@@ -171,40 +183,50 @@ p {
 .fixed-box1 {
     position: absolute;
     background: rgba(255, 225, 0, 0.9);
-    margin: 180px 55px;
+    margin: 180px 40px;
     height: 32px;
-    width: 150px auto;
+    width: 148px;
     border-radius:100px;
+    text-align: center;
 }
 
 .fixed-box2 {
     position: absolute;
-    text-align: auto;
+    text-align: center;
     background: rgba(255, 225, 0, 0.9);
     margin: 180px 45px;
     height: 32px;
-    width: 230px auto;
+    width: 183px;
     border-radius:100px;
-}
-
-.background {
-    background-color:#275a53; 
 }
 
 .fixed-box3 {
     position: absolute;
+    text-align: center;
     background: rgba(255, 225, 0, 0.9);
-    margin: 180px 55px;
+    margin: 180px 38px;
     height: 28px;
     width: 150px;
     border-radius:100px;
 
 }
 
+.background {
+    background-color:#275a53; 
+}
+
+
+
 .picture-size {
     width:658px;
     margin: 20px 20px;
 }
+
+.contact_pic {
+    margin: 20px;
+     width: 150px;
+
+} 
 
 
 #text-area {
@@ -213,14 +235,12 @@ p {
 }
 
 .submit_button {
-    width: 550px;
+    width: 300px;
     background-color: #e3492B;
     color: white;
     border-radius: 10px;
-    margin: auto;;
     /* height: 30px; */
     font-size: 12pt;
-
 }
 
 @media screen and (max-width: 768px) {
@@ -301,39 +321,6 @@ p {
         margin: 0px 0px 0px 10px;
     }
 
-
-    .fixed-box1 {
-        position: absolute;
-        background: rgba(255, 225, 0, 0.9);
-        margin: 180px 55px;
-        height: 32px;
-        width: 150px;
-        border-radius:100px;
-        text-align: center;
-    }
-
-    .fixed-box2 {
-        position: absolute;
-        text-align: auto;
-        background: rgba(255, 225, 0, 0.9);
-        margin: 180px 45px;
-        height: 32px;
-        width: 230px;
-        border-radius:100px;
-        text-align: center;
-    }
-
-
-    .fixed-box3 {
-        position: absolute;
-        background: rgba(255, 225, 0, 0.9);
-        margin: 180px 55px;
-        height: 28px;
-        width: 150px;
-        border-radius:100px;
-        text-align: center;
-    }
-
     .hor-line {
         width:645px;
         height: 1px;
@@ -373,9 +360,6 @@ p {
     
     .form {
         float: left;
-        /* position: absolute;
-        top: 180px; */
-        /* margin-left: 200px; */
         background: whitesmoke;
 
     }
@@ -423,9 +407,8 @@ p {
         }
     
         .port_image {
-            margin-left: 30px;
-            margin-top: 20px;
-            height: 250px;
+            width:580px;
+            height: 100%;
           
         }
     
@@ -441,7 +424,17 @@ p {
             height: 100px;
             background-color: darkolivegreen;
             margin:0px 0px;
-            font-size: 23pt;
+            font-size: 36pt;
+        }
+
+        .nav_box {
+            width:640px;
+            height:50px;
+            color: wheat;
+            list-style:none;
+            /* padding: 10px; */
+            font-display: none;
+            /* text-align: center; */
         }
         
         .text-wrap {
@@ -514,7 +507,7 @@ p {
         }
     
         .input-size {
-            width: 400px;
+            width: 300px;
             margin-top: 0px;
             font-size: 12pt;
             /* text-align: initial; */
@@ -522,8 +515,8 @@ p {
         }
     
         .input-size2 {
-            width: 400px;
-            height: 200px;
+            width: 300px;
+            height: 150px;
             margin-top: 0px;
             font-size: 12pt;
             /* text-align: initial; */
@@ -537,12 +530,10 @@ p {
         } 
         
         .form {
-            float: left;
-            /* position: absolute;
-            top: 180px; */
-            /* margin-left: 200px; */
-            background: whitesmoke;
-    
+            /* float: left; */
+            position: absolute;
+            top: 230px;
+            right: 50px;
         }
     
         .submit_button {
@@ -569,6 +560,7 @@ p {
             font-size: 30px;
         
         }
+
+         
     
-    }
 }
